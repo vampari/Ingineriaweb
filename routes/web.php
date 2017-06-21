@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', {  return view('welcome');
-});
+Route::get('/', 'homeController@index');
+
+Route::get('/registrarAlumno','alumnosController@registrar');
+
 Route::get("/ejemplo", "ejemploController@index");
