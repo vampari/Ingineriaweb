@@ -21,11 +21,19 @@
       <option value="1">Masculino</option>
     </select>
   </div>
+  <div class="form-group"
+    <label for="carrera">Carrera:</label>
+    <select class="form-control" name="carrera">
+          @foreach($carrera as $c)
+            <option value="{{$c->id}}">{{$c->nombre}}</option>
+          @endforeach
+    </select>
   <div>
     <button type="submit" class="btn btn-primary">Registrar</button>
     <a href="{{url('/')}}" class"btb  btb-primary"> Cancelar </a>
 
   </div>
+
 </form>
 
 @stop
